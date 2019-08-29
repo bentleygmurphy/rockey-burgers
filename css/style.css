@@ -1,6 +1,6 @@
 .mainContainer {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .topContainer {
@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    padding: 10px;
 }
 
 .navLogo {
@@ -23,6 +24,12 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    width: 50%;
+}
+
+.navLogo>img {
+    width: 25%;
+    height: auto;
 }
 
 .navLink {
@@ -32,11 +39,9 @@
     align-items: center;
 }
 
-.navLink > a {
+.navLink>a {
     margin: 10px;
     padding: 10px;
 }
 
-.topText {
-
-}
+.topText {}
