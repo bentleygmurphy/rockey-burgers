@@ -69,8 +69,40 @@ body {
 }
 
 .topText {
+    display: flex;
     font-size: 30px;
     color: white;
     width: 100%;
-    background-color: #96281b;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.topText>p {
+    margin: 40px;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.bottomContainer>div {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottomContainer>div>div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#quote {
+    background-color: black;
+    color: white;
 }
