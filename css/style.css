@@ -40,7 +40,7 @@ body {
 .navLink {
     display: flex;
     flex-grow: 2;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -52,6 +52,10 @@ body {
     color: black;
     text-decoration: none;
     font-size: 20px;
+}
+
+.navLink>a:hover {
+    color: #f1a536;
 }
 
 .topContent {
@@ -106,4 +110,37 @@ body {
 #quote {
     background-color: black;
     color: white;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.footerBubbles {
+    width: 100%;
+    margin: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBubbles>input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    height: 21px;
+}
+
+.subBtn {
+    width: 50%;
+    background-color: #2cc66d;
+    color: white;
+}
+
+.subBtn:hover {
+    background-color: rgb(56, 241, 133);
+}
+
+.subBtn:active {
+    background-color: #2cc66d;
 }
