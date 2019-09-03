@@ -32,6 +32,7 @@ body {
 }
 
 .navLogo>img {
+    min-width: 120px;
     width: 25%;
     height: auto;
 }
