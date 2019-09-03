@@ -133,7 +133,7 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     border: none;
-    height: 21px;
+    height: 25px;
 }
 
 .subBtn {
@@ -153,7 +153,7 @@ body {
 .faqBtn {
     width: 100%;
     border: none;
-    height: 21px;
+    height: 25px;
     background-color: #2c88c6;
     color: white;
     margin-top: 5px;
