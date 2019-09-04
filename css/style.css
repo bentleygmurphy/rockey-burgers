@@ -10,6 +10,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .topContainer {
     display: flex;
     flex-direction: column;
@@ -136,6 +140,18 @@ body {
     height: 25px;
 }
 
+.footerBubbles>textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.footerBubbles>h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
 .subBtn {
     width: 50%;
     background-color: #2cc66d;
@@ -170,4 +186,14 @@ body {
 
 .faqMargin {
     margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .bottomContainer>div {
+        flex-wrap: wrap;
+    }
+
+    .topContent {
+        flex-wrap: wrap;
+    }
 }
