@@ -141,6 +141,13 @@ form>input {
     height: 25px;
 }
 
+form>select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    height: 25px;
+}
+
 form>textarea {
     margin-top: 5px;
     margin-bottom: 5px;
