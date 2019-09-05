@@ -125,7 +125,7 @@ textarea {
     display: flex;
 }
 
-.footerBubbles {
+form {
     width: 100%;
     margin: 15px;
     color: white;
@@ -134,20 +134,14 @@ textarea {
     font-size: 1em;
 }
 
-.footerBubbles>input {
+form>input {
     margin-top: 5px;
     margin-bottom: 5px;
     border: none;
     height: 25px;
 }
 
-.footerBubbles>textarea {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: none;
-}
-
-.footerBubbles>h5 {
+form>textarea {
     margin-top: 5px;
     margin-bottom: 5px;
     border: none;
