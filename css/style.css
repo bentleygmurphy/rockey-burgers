@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    background-color: #2e3131;
+    background-color: #2f4858;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -61,7 +61,7 @@ textarea {
 }
 
 .navLink>a:hover {
-    color: #f1a536;
+    color: #dda15e;
 }
 
 .topContent {
@@ -138,11 +138,10 @@ textarea {
     justify-content: center;
     padding: 10px;
     font-size: 1em;
-    width: 100%;
 }
 
 #quote {
-    background-color: black;
+    background-color: #59cd90;
     color: white;
 }
 
@@ -181,34 +180,34 @@ form>textarea {
 
 .subBtn {
     width: 50%;
-    background-color: #2cc66d;
+    background-color: #ee6352;
     color: white;
 }
 
 .subBtn:hover {
-    background-color: rgb(56, 241, 133);
+    background-color: #f17f71;
 }
 
 .subBtn:active {
-    background-color: #2cc66d;
+    background-color: #ee6352;
 }
 
 .infoBtn {
     width: 100%;
     border: none;
     height: 25px;
-    background-color: #2c88c6;
+    background-color: #3fa7d6;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .infoBtn:hover {
-    background-color: #359ee4;
+    background-color: #84c7e4;
 }
 
 .infoBtn:active {
-    background-color: #2c88c6;
+    background-color: #3fa7d6;
 }
 
 .faqMargin {
@@ -250,23 +249,40 @@ form>textarea {
     }
 }
 
+.bottomContainerContact {
+    background: white;
+}
+
 #locationCardTray {
-    overflow: scroll;
+    display: flex;
     width: 100%;
     margin: 0px;
 }
 
 #locationCardTray>div {
-    height: 300px;
-    width: 200px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
     padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: whitesmoke;
+    margin: 20px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: black;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+.cardTitle {
+    font-size: 1.2em;
+}
+
+#locationCardTray>div>span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 #locationCardTray>div:hover {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
