@@ -22,7 +22,6 @@ textarea {
 
 .navBar {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
     background: white;
@@ -49,7 +48,6 @@ textarea {
     flex-grow: 2;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
     width: 100%;
 }
 
@@ -67,7 +65,6 @@ textarea {
 
 .topContent {
     display: flex;
-    height: 100%;
 }
 
 .topPhoto {
@@ -78,6 +75,7 @@ textarea {
     height: 500px;
     background-size: cover;
     position: relative;
+    box-shadow: inset 0px 0px 100px black;
 }
 
 .topText {
@@ -210,6 +208,9 @@ form>textarea {
         flex-wrap: wrap;
     }
     .footerContainer {
+        flex-wrap: wrap;
+    }
+    .navBar {
         flex-wrap: wrap;
     }
     #joinForm {
