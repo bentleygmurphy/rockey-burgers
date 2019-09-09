@@ -138,6 +138,7 @@ textarea {
     justify-content: center;
     padding: 10px;
     font-size: 1em;
+    width: 100%;
 }
 
 #quote {
