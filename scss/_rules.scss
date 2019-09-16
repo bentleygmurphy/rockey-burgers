@@ -1,0 +1,25 @@
+$red: rgba(238, 99, 82, 1);
+$green: rgba(89, 205, 144, 1);
+$grey: rgba(47, 72, 88, 1);
+$yellow: rgba(221, 161, 94, 1);
+$blue: rgba(63, 167, 214, 1);
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$defaultPadding: 15px;
+$defaultMargin: 10px;
+$defaultRadius: 5px;
+
+@mixin colorLighten($x) {
+    color: lighten($x, 10%);
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: $defaultRadius;
+    padding: $defaultPadding;
+    margin: $defaultMargin;
+    color: $blue;
+    &:hover {
+        @include colorLighten($blue);
+    }
+}

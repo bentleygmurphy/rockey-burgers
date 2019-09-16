@@ -1,0 +1,24 @@
+{
+  "name": "rockeyBurgers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bentleygmurphy/rockey-burgers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bentleygmurphy/rockey-burgers/issues"
+  },
+  "homepage": "https://github.com/bentleygmurphy/rockey-burgers#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
