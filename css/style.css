@@ -166,7 +166,6 @@ textarea {
 .bottomContainerContact {
   display: flex;
   flex-direction: column;
-  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
   .bottomContainerContact #locationCardTray {
@@ -176,7 +175,6 @@ textarea {
     overflow: scroll; }
     .bottomContainerContact #locationCardTray div {
       display: flex;
-      width: 100%;
       flex-direction: column;
       background-color: white;
       padding: 20px;
@@ -192,11 +190,11 @@ textarea {
         margin-top: 5px;
         margin-bottom: 5px; }
       .bottomContainerContact #locationCardTray div:hover {
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 0px 10px black;
         cursor: pointer; }
 
 @media only screen and (max-width: 600px) {
-  .bottomContainer > div {
+  .bottomContainer div {
     flex-wrap: wrap; }
   .footerContainer {
     flex-wrap: wrap; }
@@ -206,3 +204,7 @@ textarea {
     margin-top: 0; }
   #joinBtnPad {
     margin-top: 0; } }
+
+@media only screen and (max-width: 1200px) {
+  .bottomContainerContact #locationCardTray {
+    display: inline; } }

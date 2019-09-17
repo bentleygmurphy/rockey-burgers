@@ -15,9 +15,11 @@ textarea {
     background-color: $grey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+
     .topContainer {
         display: flex;
         flex-direction: column;
+
         .navBar {
             display: flex;
             align-items: center;
@@ -25,39 +27,46 @@ textarea {
             background: $white;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+
             .navLogo {
                 display: flex;
                 flex-grow: 1;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+
                 img {
                     min-width: 120px;
                     width: 25%;
                     height: auto;
-                }                
-            }  
+                }
+            }
+
             .navLink {
                 display: flex;
                 flex-grow: 2;
                 justify-content: space-evenly;
                 align-items: center;
                 width: 100%;
+
                 a {
                     margin: 10px;
                     padding: 10px;
                     color: $black;
                     text-decoration: none;
                     font-size: 1em;
-                    transition: all 0.2s;  
+                    transition: all 0.2s;
+
                     &:hover {
                         color: $yellow;
-                    }              
+                    }
                 }
-            }                      
-        } 
+            }
+        }
+
         .topContent {
             display: flex;
+
             .topPhoto {
                 background-image: url("../images/background.jpg");
                 background-position: top;
@@ -67,6 +76,7 @@ textarea {
                 background-size: cover;
                 position: relative;
                 box-shadow: inset 0px 0px 100px $black;
+
                 .socialTray {
                     display: flex;
                     font-size: 1.5em;
@@ -75,19 +85,23 @@ textarea {
                     align-content: flex-end;
                     position: absolute;
                     bottom: 0;
+
                     i {
                         padding: 10px;
                         font-size: 1.5em;
                         color: rgba(255, 255, 255, 0.8);
+
                         &:nth-of-type(1) {
                             padding-right: 5px;
-                        }         
+                        }
+
                         &:nth-of-type(2) {
                             padding-left: 5px;
-                        }           
+                        }
                     }
-                }                
-            }  
+                }
+            }
+
             .topText {
                 display: flex;
                 font-size: 2em;
@@ -97,38 +111,45 @@ textarea {
                 justify-content: center;
                 align-items: center;
                 position: absolute;
+
                 span {
                     margin: 20px;
-                    text-shadow: 0px 0px 8px $black;                
+                    text-shadow: 0px 0px 8px $black;
                 }
-            }                      
-        }          
-    }    
+            }
+        }
+    }
+
     .bottomContainer {
         display: flex;
         flex-direction: column;
         background-color: $white;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+
         div {
             display: flex;
             margin-top: 10px;
             margin-bottom: 10px;
+
             div {
                 display: flex;
                 justify-content: center;
                 padding: 10px;
                 font-size: 1em;
-                width: 100%;    
-            }        
+                width: 100%;
+            }
+
             #quote {
                 background-color: $green;
                 color: $white;
-            }                        
+            }
         }
     }
+
     .footerContainer {
         display: flex;
+
         form {
             width: 100%;
             margin: 15px;
@@ -136,39 +157,46 @@ textarea {
             display: flex;
             flex-direction: column;
             font-size: 1em;
+
             input {
                 margin-top: 5px;
                 margin-bottom: 5px;
                 border: none;
-                height: 25px;            
+                height: 25px;
             }
+
             select {
                 margin-top: 5px;
                 margin-bottom: 5px;
                 border: none;
-                height: 25px;            
+                height: 25px;
             }
+
             textarea {
                 margin-top: 5px;
                 margin-bottom: 5px;
-                border: none;            
+                border: none;
             }
-        }   
+        }
+
         .subBtn {
             width: 50%;
             @include btnGen($white, $red);
         }
+
         .infoBtn {
             width: 100%;
             @include btnGen($white, $blue);
-        }   
+        }
+
         .faqMargin {
             margin-top: 5px;
-        }     
+        }
+
         #joinForm {
             display: none;
         }
-        
+
         #joinBtnPad {
             width: 100%;
             margin: 15px;
@@ -176,14 +204,13 @@ textarea {
             display: flex;
             flex-direction: column;
             font-size: 1em;
-        }                
-    }        
+        }
+    }
 }
 
 .bottomContainerContact {
     display: flex;
     flex-direction: column;
-    background-color: $white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
@@ -195,7 +222,6 @@ textarea {
 
         div {
             display: flex;
-            width: 100%;
             flex-direction: column;
             background-color: $white;
             padding: 20px;
@@ -204,28 +230,30 @@ textarea {
             font-size: 1em;
             color: $black;
             transition: all 0.2s;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);       
-            
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
             .cardTitle {
                 font-size: 1.2em;
             }
-            
+
             span {
                 margin-top: 5px;
-                margin-bottom: 5px;            
+                margin-bottom: 5px;
             }
 
             &:hover {
-                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-                cursor: pointer;            
+                box-shadow: 0px 0px 10px $black;
+                cursor: pointer;
             }
         }
-    }    
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .bottomContainer>div {
-        flex-wrap: wrap;
+    .bottomContainer {
+        div {
+            flex-wrap: wrap;
+        }
     }
 
     .footerContainer {
@@ -242,5 +270,13 @@ textarea {
 
     #joinBtnPad {
         margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bottomContainerContact {
+        #locationCardTray {
+            display: inline;
+        }
     }
 }
