@@ -9,17 +9,20 @@ $defaultPadding: 15px;
 $defaultMargin: 10px;
 $defaultRadius: 5px;
 
-@mixin colorLighten($x) {
-    color: lighten($x, 10%);
+@mixin colorLighten($c, $bc) {
+    color: lighten($c, 10%);
+    background-color: lighten($bc, 10%);
 }
 
-.btn {
+@mixin btnGen($txtColor, $bgColor) {
     text-decoration: none;
-    border-radius: $defaultRadius;
-    padding: $defaultPadding;
-    margin: $defaultMargin;
-    color: $blue;
+    border: none;
+    padding: $defaultPadding / 2;
+    margin: 5px 0px 5px 0px;
+    height: 27px;
+    color: $txtColor;
+    background-color: $bgColor;
     &:hover {
-        @include colorLighten($blue);
+        @include colorLighten($txtColor, $bgColor);
     }
 }

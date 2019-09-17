@@ -1,12 +1,3 @@
-.btn {
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 15px;
-  margin: 10px;
-  color: #3fa7d6; }
-  .btn:hover {
-    color: #69badf; }
-
 body {
   margin: 0; }
 
@@ -138,24 +129,28 @@ textarea {
         border: none; }
     .mainContainer .footerContainer .subBtn {
       width: 50%;
-      background-color: #ee6352;
-      color: white; }
+      text-decoration: none;
+      border: none;
+      padding: 7.5px;
+      margin: 5px 0px 5px 0px;
+      height: 27px;
+      color: white;
+      background-color: #ee6352; }
       .mainContainer .footerContainer .subBtn:hover {
-        background-color: #f17f71; }
-      .mainContainer .footerContainer .subBtn:active {
-        background-color: #ee6352; }
+        color: white;
+        background-color: #f38d80; }
     .mainContainer .footerContainer .infoBtn {
       width: 100%;
+      text-decoration: none;
       border: none;
-      height: 25px;
-      background-color: #3fa7d6;
+      padding: 7.5px;
+      margin: 5px 0px 5px 0px;
+      height: 27px;
       color: white;
-      margin-top: 5px;
-      margin-bottom: 5px; }
+      background-color: #3fa7d6; }
       .mainContainer .footerContainer .infoBtn:hover {
-        background-color: #84c7e4; }
-      .mainContainer .footerContainer .infoBtn:active {
-        background-color: #3fa7d6; }
+        color: white;
+        background-color: #69badf; }
     .mainContainer .footerContainer .faqMargin {
       margin-top: 5px; }
     .mainContainer .footerContainer #joinForm {
