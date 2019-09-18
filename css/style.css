@@ -172,7 +172,7 @@ textarea {
     display: flex;
     width: 100%;
     margin: 0px;
-    overflow: scroll; }
+    overflow: visible; }
     .bottomContainerContact #locationCardTray div {
       display: flex;
       flex-direction: column;
@@ -182,7 +182,7 @@ textarea {
       border-radius: 5px;
       font-size: 1em;
       color: black;
-      transition: all 0.2s;
+      transition: all 0.1s;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
       .bottomContainerContact #locationCardTray div .cardTitle {
         font-size: 1.2em; }
@@ -190,8 +190,11 @@ textarea {
         margin-top: 5px;
         margin-bottom: 5px; }
       .bottomContainerContact #locationCardTray div:hover {
-        box-shadow: 0px 0px 10px black;
-        cursor: pointer; }
+        box-shadow: 0px 0px 20px black;
+        cursor: pointer;
+        transform: scale(1.02); }
+      .bottomContainerContact #locationCardTray div:active {
+        transform: scale(1); }
 
 @media only screen and (max-width: 600px) {
   .bottomContainer div {
