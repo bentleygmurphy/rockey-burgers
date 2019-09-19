@@ -98,6 +98,10 @@ textarea {
                         &:nth-of-type(2) {
                             padding-left: 5px;
                         }
+                        &:hover {
+                            color: rgba(255, 255, 255, 1);
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -129,8 +133,8 @@ textarea {
 
         div {
             display: flex;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
 
             div {
                 display: flex;
