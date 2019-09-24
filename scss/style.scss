@@ -256,6 +256,33 @@ textarea {
         }
     }
 }
+#menuNavRad {
+    border-radius: 5px;
+}
+.menuContainer {
+    display: inline;
+    margin: auto 0;
+    .menuCard {
+        padding: 20px;
+        margin: 20px 10px;
+        border-radius: 5px;
+        background: white;
+        .menuTitle {
+            font-size: 2em;
+            span {
+                font-size: .65em;
+                color: grey;
+            }
+        }
+        .menuBody {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin: 10px 0;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .bottomContainer {

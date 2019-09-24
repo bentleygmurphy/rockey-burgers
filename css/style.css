@@ -199,6 +199,28 @@ textarea {
       .bottomContainerContact #locationCardTray div:active {
         transform: scale(1); }
 
+#menuNavRad {
+  border-radius: 5px; }
+
+.menuContainer {
+  display: inline;
+  margin: auto 0; }
+  .menuContainer .menuCard {
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    background: white; }
+    .menuContainer .menuCard .menuTitle {
+      font-size: 2em; }
+      .menuContainer .menuCard .menuTitle span {
+        font-size: .65em;
+        color: grey; }
+    .menuContainer .menuCard .menuBody {
+      display: flex;
+      flex-direction: column; }
+      .menuContainer .menuCard .menuBody span {
+        margin: 10px 0; }
+
 @media only screen and (max-width: 600px) {
   .bottomContainer div {
     flex-wrap: wrap; }
